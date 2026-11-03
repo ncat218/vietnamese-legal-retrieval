@@ -1,0 +1,16 @@
+{
+  "features": ["bm25_score", "dense_score", "rrf_score", "qwen_margin", "jina_score"],
+  "n_folds": 3,
+  "seed": 20261103,
+  "num_boost_round": 40,
+  "parameters": {
+    "objective": "lambdarank",
+    "metric": "ndcg",
+    "learning_rate": 0.05,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_data_in_leaf": 10,
+    "num_threads": 2,
+    "verbosity": -1
+  }
+}

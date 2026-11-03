@@ -1,0 +1,22 @@
+{
+  "validated_on": "2026-11-03",
+  "python": "3.12.14",
+  "unit_and_integration_tests": {
+    "run": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "historical_final_policy_parity": {
+    "status": "PASS",
+    "synthetic_comparisons": 300,
+    "source_notebook_sha256": "a2132b157c629997b2ce74026ded7dac96c20fd62d4a90e8beee3c2822a4a613",
+    "source_function_sha256": "1c7437fa9df871792dff87c6a4ec4a8b50e95ba7c691c4a544ca6b8f9b08ac65",
+    "cases": "protected anchors, inherited-position ties, whole-query fallback, strict missing-score rejection",
+    "scope": "final selection only, synthetic inputs; not neural inference or historical leaderboard reproduction"
+  },
+  "visual_assets": "hero and architecture rendered and visually inspected",
+  "optional_training": "LightGBM4.6.0 native fitting, 3-fold duplicate-group OOF and final inference verified",
+  "readme_commands": "demo, replay, evaluate, train and predict executed locally",
+  "competition_data_used_for_tests": false
+}

@@ -1,0 +1,29 @@
+{
+  "verified_on": "2026-11-03",
+  "aggregate_sources": [
+    {
+      "source_archive": "thu_nghiem_05a_h1_base17e_handoff.zip",
+      "source_archive_sha256": "d476d5d482c7a50de8bb2427eb69d74a371108e90bfa68091310252ebe472ef8",
+      "manifest_verified": 16,
+      "aggregate_export": "05a_internal_eval.csv",
+      "aggregate_sha256": "b45a4431070cb7457ca902d0a80ebe0feb3c63621bb99aa19c440bfcb30b1622",
+      "scope": "internal, previously viewed EVAL; not public leaderboard"
+    },
+    {
+      "source_archive": "thu_nghiem_04b_d5_jina_lambdamart_handoff.zip",
+      "source_archive_sha256": "7e94e5bd41bae1286ff54f0ffc61908c71eaa7091122b37f94d275659e983714",
+      "manifest_verified": 22,
+      "aggregate_export": "04b_internal_eval.csv",
+      "aggregate_sha256": "f03b2405c46cd71e5a041eedb104cdb905e8da3c368687f06ea50a85636fce19",
+      "scope": "internal, previously viewed EVAL; not public leaderboard"
+    }
+  ],
+  "public_results": {
+    "17E": 0.9332,
+    "05A": 0.933833334,
+    "06A": 0.933833334,
+    "provenance": "Owner-reported historical public leaderboard scores, recorded in the original project summary; not independently rescored in this repository",
+    "baseline_precision": "17E public score is rounded; differences are approximate"
+  },
+  "full_pipeline_parameter_budget_verified": false
+}

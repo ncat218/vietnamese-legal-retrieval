@@ -1,0 +1,25 @@
+{
+  "profile": "historical_05a_06a_description_only",
+  "source_depth": 200,
+  "retrieval_lanes": ["BM25", "BGE-M3", "DEk21-v2"],
+  "rrf_k": 60,
+  "d5_pool": 50,
+  "jina": {
+    "model_id": "jinaai/jina-reranker-v3.5",
+    "revision": "e8a93f33f0b22108f8c2364f8484ce3422552fbc",
+    "joint_list_size": 50,
+    "query_max_tokens": 256,
+    "document_max_tokens": 256,
+    "prompt_max_tokens": 16384
+  },
+  "shortlist_ranker": "frozen 04B LambdaMART over Jina and retrieval features",
+  "shortlist_k": 15,
+  "final_ranker": "frozen 17E ensemble, retrieval and Qwen features",
+  "protected_prefix": "exact first two documents from inherited baseline (14A anchors)",
+  "tie_break": ["score_lgbm_17e descending", "candidate_position_17c ascending", "document_id ascending"],
+  "05a_missing_score": "entire query falls back to exact baseline Top5",
+  "06a_missing_score": "backfill before selection; missing score is an error",
+  "final_k": 5,
+  "exact_end_to_end_reproduction_available": false,
+  "whole_pipeline_parameter_count_verified": false
+}
